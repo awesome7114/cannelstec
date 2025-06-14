@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    cursor: default;
+}
+/* -------------------------------header--------------------------------------------------------------------- */
+
+.header{
+    padding: .2vw;
+    background: linear-gradient(90deg, rgb(40, 0, 66), black);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}    
+
+img{
+    margin: 0 4vw;
+    width: 38px;
+    height: 38px;
+    display: flex;
+}
+
+ul{
+    padding: 10px 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+a{
+    padding: 0 2vw;
+    display: inline-flex;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-size: 17px;
+    font-weight: 400;
+    transition: color .3s ease-in-out;
+}
+
+a:hover{
+    color: rgb(142, 0, 185);
+}
+
+/*--------------------------------------------------------- main-------------------------------------- */
+
+.main{
+    margin: 2vh 0;
+    padding: 2vh 40px;
+    height: 20vh;
+    background: url("May\ 22\,\ 2025\,\ 01_19_17\ PM.png");
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: space-around;
+}
+
+.main h1{
+    margin: 6vh 2vw;
+    color: #ffffff;
+    text-align: center;
+}
+
+span{
+    color: rgb(135, 0, 177);
+    transition: color .6s ease-in-out;
+}
+
+span:hover{
+    color: rgb(153, 29, 255);
+}
+
+/* -------------------------------------------sub--------------------------------------------------------------------- */
+
+.mainsection{
+    margin: 3vh 5vw;
+    padding: 5vh 5vw;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    background: rgba(115, 8, 223, 0); /*--------------to check bg--------------- */
+    justify-content: space-between;
+}
+
+.sub_img img{
+    margin: 2vh 0;
+    margin-right: 5vw;
+    width: 30vw;
+    height: 49vh;
+    border-radius: 25px;
+}
+
+.sub{
+    width: 80vh;
+}
+
+.sub h1{
+    color: rgb(59, 0, 77);
+}
+
+.sub p{
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.subsection{
+    margin: 1vh 10vw;
+}
+
+.subsection h1{
+    font-size: 55px;
+}
+
+.subsection .list{
+    margin: 1vh 0.5vw;
+    padding: 1vh 2px;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    background: rgba(222, 184, 135, 0);
+}
+
+.subsection .list .a, .b, .c, .d{
+    margin: 1vh 1vw;
+    width: 70vw;
+    height: 40vh;
+    background: url('May\ 22\,\ 2025\,\ 01_19_17\ PM.png') center/contain;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+}
+
+.subsection .list .a:hover, .b:hover, .c:hover, .d:hover{
+    transform:translateY(-2vh);
+}
+
+.subsection .button a{
+    margin: 1vh 35vw;
+    padding: 1vh 1vw;
+    width: 10vw;
+    border: solid black 2px;
+    border-radius: 10px;
+    color: #000000;
+    background: transparent;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    transition: all .5s ease-in-out;
+}
+
+.subsection .button a:hover{
+    border: solid#ffffff00 2px;
+    color: #ffffff;
+    background: rgb(30, 12, 53);
+}
+
+/* ----------------------------------------------cerditsection -------------------------------------*/
+
+.cerditsection{
+    margin: 0;
+    margin-top: 3vh;
+    padding: 2vh 2vw;
+    background: linear-gradient(40deg, rgb(17, 0, 17), rgb(0, 2, 0));
+    height: 100vh;
+}
+
+/* -----------------------------------------------right -----------------------------------------------------*/
+
+.cerditright form{
+    margin: 6vh 1vw;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(245, 222, 179, 0);
+    float: right;
+}
+ 
+ .cerditright input, textarea{
+    padding: 12px;
+    margin: 4%;
+    border: solid rgb(195, 0, 202) 1px;
+    resize: none;
+    color: rgb(236, 144, 255);
+    background: #0f0f0f;
+    font-size: 18px;
+    border-radius: 6px;
+}
+ .cerditright input:hover,
+  textarea:hover{
+    border: solid rgb(195, 0, 202) 1px;
+  }
+
+
+.cerditright .button{
+    margin: 1vh 19vw;
+    padding: 10px 20px;
+    color: rgb(116, 0, 116);
+    border: solid rgb(99, 1, 99) 2px;                                   
+    border-radius: 12px;
+    background: transparent;
+    font-size: 18px;
+    align-self: center;
+    transition: all .5s ease-in-out;
+}
+
+.cerditright .button:hover{
+    border: solid rgb(185, 122, 185) 2px;
+    color: rgb(180, 118, 180);
+    background: rgba(168, 111, 168, 0);
+}
+
+/*------------------------------------------------ left ------------------------------------------*/
+
+.cerditleft{
+    margin: 6vh 1vw;
+    padding: 5vh 5vw;
+    width: 35vw;
+    background: rgba(70, 66, 61, 0);
+    color: #ffffff;
+    float: left;
+}
+
+.cerditleft h1{
+    margin: 3vh 1px;
+    margin-bottom: 10vh;
+    font-size: 53px;
+}
+
+.cerditleft h2{
+    margin: 3vh 1vw;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a img {
+    margin: 0 -10px;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 15px;
+  border: solid rgb(195, 0, 255) 2px;
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.social-icons a:hover img {
+  box-shadow: rgb(225, 0, 255) 0 0 10px;
+  transform: scale(1.15) rotate(-8deg);
+  filter: drop-shadow(0 2px 8px rgba(174, 0, 255, 0.096));
+}
+
+.cerditleft .txt{
+    color: rgb(168, 111, 168);
+}
+
+/* -----------------------------------footer---------------------------------- */
+
+
+.foot{
+    margin: 0 0;
+    display: flex;
+    background: #816f6f00; /*tocheck */
+    color: #ffffff;
+    font-size: 17px;
+    word-spacing: 2px;
+    height: 8vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot .dim{
+    display: inline;
+    color: rgb(168, 111, 168);
+}
+
+
+
+
+
+
+
+/*----------------------------------------------- About section---------------------------------- */
+
+
+
+.ab_head{
+    width: 100%;
+    height: 100vh;
+    background: url('May\ 22\,\ 2025\,\ 01_19_17\ PM.png') center/cover fixed no-repeat;
+    text-align: center;
+}
+
+.ab_head h1{
+    margin: 30vh 10vw 1vh 10vw;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.ab_head p{
+    margin: 3vh 25vw;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 6vh;
+}
+
+/* ------------------------------------------sub-------------------------------- */
+
+.absub{
+    height: 100vh;
+    margin: 0 5vw;
+    padding: 5vh 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;/*to check*/
+}
+
+.absub .left img{
+    width: auto;
+    height: 60vh;
+    border-radius: 25px;
+}
+
+.absub .right{
+    margin: 0 10px;
+    padding: 1vh 1vw;
+    width: 45vw;
+    background: #8b595900;
+}
+
+.absub h1{
+    margin: 3vh 0;
+    font-size: 60px;
+}
+
+.absub p{
+    margin: 1vh 0;
+    font-size: 20px;
+}
+
+/* --------------------portfolio------------------- */
+
+.sub-title{
+    font-size: 70px;
+}
+
+#portfolio{
+    padding: 50px 1vw;
+    place-items: center;
+    align-items: center;
+}
+
+.container{
+    margin: 10vh 0vw;
+    padding: 1vh 1vw;
+    width: 90vw;
+    background: #1e005700;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+}
+
+.work-list{
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px 0px;
+    margin-top: 50px; 
+    
+    align-items: center;
+}
+
+.work{
+    margin: 5px .5vw;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform .9s ease;
+}
+
+.work img{
+    width: 100vw;
+    height: 50vh;
+    border-radius: 25px;
+    transition: transform 0.5s;
+    place-items: center;
+}
+
+.work:hover{
+    transform: translateY(-10px);
+}
+
+.btn{
+    margin: 50px auto;
+    width: fit-content;
+    padding: 14px 50px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: rgb(116, 0, 116);
+    border: solid rgb(99, 1, 99) 2px;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:hover{
+    background: rgb(116, 0, 116);
+    border: solid rgb(116, 0, 116) 2px;
+    color: rgb(255, 255, 255);
+}
+
+
+/* ----------------------------------categories----------------------------------- */
+
+
+
+#services{
+    margin: 0 4vw;
+    padding: 10px 0;
+
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.services-list div{
+    background: #3a3a3a;
+    color: #ffffff;
+    padding: 40px 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2{
+   font-size: 30px; 
+   font-weight: 500;
+   margin-bottom: 15px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+.services-list div:hover{
+    background: #3a0161;
+    transform: translateY(-10px);
+}
