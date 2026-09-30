@@ -562,9 +562,9 @@ span:hover{
     animation: rise-in .65s ease-out both;
 }
 
-.services-list > div:nth-child(2){ animation-delay: .06s; }
-.services-list > div:nth-child(3){ animation-delay: .12s; }
-.services-list > div:nth-child(4){ animation-delay: .18s; }
+.services-list > div:nth-child(2){ animation-delay: .05s; }
+.services-list > div:nth-child(3){ animation-delay: .10s; }
+.services-list > div:nth-child(4){ animation-delay: .15s; }
 
 .services-list > div i{
     font-size: 20px;
@@ -742,7 +742,7 @@ span:hover{
     *,
     *::before,
     *::after{
-        scroll-behavior: auto !important;
+        scroll-behavior: smooth !important;
         animation-duration: .01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: .01ms !important;
