@@ -530,9 +530,15 @@ span:hover{
 
 
 #services{
-    width: min(90%, 1200px);
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
     padding: 2rem 0;
+}
+
+#services > .container{
+    width: 100%;
+    margin: 0;
+    padding: 1rem clamp(1rem, 5vw, 4rem);
 
 }
 
@@ -540,7 +546,8 @@ span:hover{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 320px));
     gap: 16px;
-    margin-top: 20px;
+    width: min(100%, 1200px);
+    margin: 20px auto 0;
     justify-content: center;
 }
 
