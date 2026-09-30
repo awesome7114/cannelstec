@@ -11,37 +11,51 @@ body{
     padding: 0;
     background: #ffffff;
     cursor: default;
+    overflow-x: hidden;
 }
 /* -------------------------------header--------------------------------------------------------------------- */
 
 .header{
-    padding: .2vw;
+    padding: .5rem clamp(.75rem, 3vw, 2rem);
     background: linear-gradient(90deg, rgb(40, 0, 66), black);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}    
+    align-items: center;
+    gap: 1rem;
+}
 
 img{
-    margin: 0 4vw;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.header > img{
+    flex: 0 0 38px;
+    margin: 0;
     width: 38px;
     height: 38px;
-    display: flex;
+    object-fit: contain;
 }
 
 ul{
-    padding: 10px 0;
+    margin: 0;
+    padding: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: .25rem;
 }
 
 a{
-    padding: 0 2vw;
+    padding: .5rem .75rem;
     display: inline-flex;
     text-decoration: none;
     color: #ffffff;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 17px;
     font-weight: 400;
     transition: color .3s ease-in-out;
@@ -54,19 +68,24 @@ a:hover{
 /*--------------------------------------------------------- main-------------------------------------- */
 
 .main{
-    margin: 2vh 0;
-    padding: 2vh 40px;
-    height: 20vh;
+    display: grid;
+    place-items: center;
+    min-height: 52vh;
+    margin: 0;
+    padding: 4rem 1.25rem;
     background: url("May\ 22\,\ 2025\,\ 01_19_17\ PM.png");
-    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
-    justify-content: space-around;
 }
 
 .main h1{
-    margin: 6vh 2vw;
+    max-width: 900px;
+    margin: 0 auto;
     color: #ffffff;
     text-align: center;
+    font-size: 44px;
+    line-height: 1.2;
+    animation: rise-in .8s ease-out both;
 }
 
 span{
@@ -81,70 +100,79 @@ span:hover{
 /* -------------------------------------------sub--------------------------------------------------------------------- */
 
 .mainsection{
-    margin: 3vh 5vw;
-    padding: 5vh 5vw;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    background: rgba(115, 8, 223, 0); /*--------------to check bg--------------- */
-    justify-content: space-between;
+    width: min(90%, 1200px);
+    margin: 4rem auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+    align-items: center;
+    gap: 3rem;
 }
 
 .sub_img img{
-    margin: 2vh 0;
-    margin-right: 5vw;
-    width: 30vw;
-    height: 49vh;
-    border-radius: 25px;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 16px;
 }
 
 .sub{
-    width: 80vh;
+    min-width: 0;
+    animation: rise-in .75s .12s ease-out both;
 }
 
 .sub h1{
     color: rgb(59, 0, 77);
+    font-size: 36px;
+    line-height: 1.2;
 }
 
 .sub p{
     font-size: 18px;
     font-weight: 550;
+    line-height: 1.65;
+    margin-top: 1rem;
 }
 
 .subsection{
-    margin: 1vh 10vw;
+    width: min(90%, 1200px);
+    margin: 4rem auto;
 }
 
 .subsection h1{
-    font-size: 55px;
+    font-size: 44px;
 }
 
 .subsection .list{
-    margin: 1vh 0.5vw;
-    padding: 1vh 2px;
-    width: 80vw;
-    display: flex;
-    flex-direction: row;
-    background: rgba(222, 184, 135, 0);
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+    padding: 0;
 }
 
-.subsection .list .a, .b, .c, .d{
-    margin: 1vh 1vw;
-    width: 70vw;
-    height: 40vh;
-    background: url('May\ 22\,\ 2025\,\ 01_19_17\ PM.png') center/contain;
-    border-radius: 25px;
-    transition: all .5s ease-in-out;
+.subsection .list > div{
+    min-height: 200px;
+    margin: 0;
+    border-radius: 16px;
+    background: url('May\ 22\,\ 2025\,\ 01_19_17\ PM.png') center/cover no-repeat;
+    transition: transform .35s ease, filter .35s ease;
+    animation: rise-in .65s ease-out both;
 }
 
-.subsection .list .a:hover, .b:hover, .c:hover, .d:hover{
-    transform:translateY(-2vh);
+.subsection .list > div:nth-child(2){ animation-delay: .08s; }
+.subsection .list > div:nth-child(3){ animation-delay: .16s; }
+.subsection .list > div:nth-child(4){ animation-delay: .24s; }
+
+.subsection .list > div:hover{
+    transform: translateY(-8px);
+    filter: saturate(1.15);
 }
 
 .subsection .button a{
-    margin: 1vh 35vw;
-    padding: 1vh 1vw;
-    width: 10vw;
+    margin: 0 auto;
+    padding: .8rem 1.25rem;
+    width: fit-content;
     border: solid black 2px;
     border-radius: 10px;
     color: #000000;
@@ -156,6 +184,11 @@ span:hover{
     transition: all .5s ease-in-out;
 }
 
+.subsection .button{
+    display: flex;
+    justify-content: center;
+}
+
 .subsection .button a:hover{
     border: solid#ffffff00 2px;
     color: #ffffff;
@@ -165,27 +198,27 @@ span:hover{
 /* ----------------------------------------------cerditsection -------------------------------------*/
 
 .cerditsection{
+    display: grid;
+    grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+    align-items: start;
+    gap: 2rem;
     margin: 0;
-    margin-top: 3vh;
-    padding: 2vh 2vw;
+    padding: 3rem 5vw 1rem;
     background: linear-gradient(40deg, rgb(17, 0, 17), rgb(0, 2, 0));
-    height: 100vh;
 }
 
 /* -----------------------------------------------right -----------------------------------------------------*/
 
 .cerditright form{
-    margin: 6vh 1vw;
-    width: 55%;
+    margin: 2rem 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    background: rgba(245, 222, 179, 0);
-    float: right;
 }
  
- .cerditright input, textarea{
+.cerditright input, .cerditright textarea{
     padding: 12px;
-    margin: 4%;
+    margin: 0 0 1rem;
     border: solid rgb(195, 0, 202) 1px;
     resize: none;
     color: rgb(236, 144, 255);
@@ -193,14 +226,14 @@ span:hover{
     font-size: 18px;
     border-radius: 6px;
 }
- .cerditright input:hover,
-  textarea:hover{
+.cerditright input:hover,
+.cerditright textarea:hover{
     border: solid rgb(195, 0, 202) 1px;
   }
 
 
 .cerditright .button{
-    margin: 1vh 19vw;
+    margin: .5rem auto;
     padding: 10px 20px;
     color: rgb(116, 0, 116);
     border: solid rgb(99, 1, 99) 2px;                                   
@@ -220,30 +253,33 @@ span:hover{
 /*------------------------------------------------ left ------------------------------------------*/
 
 .cerditleft{
-    margin: 6vh 1vw;
-    padding: 5vh 5vw;
-    width: 35vw;
-    background: rgba(70, 66, 61, 0);
+    margin: 0;
+    padding: 2rem 0;
+    width: auto;
     color: #ffffff;
-    float: left;
 }
 
 .cerditleft h1{
-    margin: 3vh 1px;
-    margin-bottom: 10vh;
-    font-size: 53px;
+    margin: 0 0 2rem;
+    font-size: 42px;
 }
 
 .cerditleft h2{
-    margin: 3vh 1vw;
+    margin: 1.5rem 0;
 }
 
 .social-icons {
-  display: flex;
+        display: flex;
+        flex-wrap: wrap;
+        gap: .6rem;
+}
+
+.social-icons a{
+        padding: 0;
 }
 
 .social-icons a img {
-    margin: 0 -10px;
+    margin: 0;
   width: 40px;
   height: 40px;
   object-fit: contain;
@@ -266,13 +302,14 @@ span:hover{
 
 
 .foot{
-    margin: 0 0;
+    grid-column: 1 / -1;
+    margin: 0;
     display: flex;
     background: #816f6f00; /*tocheck */
     color: #ffffff;
     font-size: 17px;
     word-spacing: 2px;
-    height: 8vh;
+    min-height: 3rem;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -295,65 +332,75 @@ span:hover{
 
 .ab_head{
     width: 100%;
-    height: 100vh;
-    background: url('May\ 22\,\ 2025\,\ 01_19_17\ PM.png') center/cover fixed no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    background: url('May\ 22\,\ 2025\,\ 01_19_17\ PM.png') center/cover no-repeat;
     text-align: center;
 }
 
 .ab_head h1{
-    margin: 30vh 10vw 1vh 10vw;
+    max-width: 1000px;
+    margin: auto auto 1rem;
+    padding: 3rem 1.5rem 0;
     font-size: 50px;
     color: #ffffff;
+    animation: rise-in .8s ease-out both;
 }
 
 .ab_head p{
-    margin: 3vh 25vw;
+    width: min(720px, 86%);
+    margin: 0 auto;
     color: #ffffff;
     font-size: 20px;
     font-weight: 500;
-    line-height: 6vh;
+    line-height: 1.6;
+    animation: rise-in .8s .12s ease-out both;
 }
 
 /* ------------------------------------------sub-------------------------------- */
 
 .absub{
-    height: 100vh;
-    margin: 0 5vw;
-    padding: 5vh 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: min(90%, 1200px);
+    min-height: 70vh;
+    margin: 0 auto;
+    padding: 4rem 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     align-items: center;
-    background: transparent;/*to check*/
+    gap: 3rem;
 }
 
 .absub .left img{
-    width: auto;
-    height: 60vh;
-    border-radius: 25px;
+    width: 100%;
+    max-height: 600px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 16px;
 }
 
 .absub .right{
-    margin: 0 10px;
-    padding: 1vh 1vw;
-    width: 45vw;
-    background: #8b595900;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .absub h1{
-    margin: 3vh 0;
-    font-size: 60px;
+    margin: 0 0 1rem;
+    font-size: 42px;
 }
 
 .absub p{
-    margin: 1vh 0;
+    margin: 0;
     font-size: 20px;
+    line-height: 1.65;
 }
 
 /* --------------------portfolio------------------- */
 
 .sub-title{
-    font-size: 70px;
+    font-size: 48px;
 }
 
 #portfolio{
@@ -364,9 +411,9 @@ span:hover{
 }
 
 .container{
-    margin: 10vh 0vw;
-    padding: 1vh 1vw;
-    width: 90vw;
+    margin: 4rem 0;
+    padding: 1rem;
+    width: min(90%, 1200px);
     background: #1e005700;
     justify-content: center;
     place-items: center;
@@ -378,6 +425,7 @@ span:hover{
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 280px));
     gap: 24px;
     margin-top: 50px;
+    width: 100%;
     align-items: stretch;
     justify-content: space-evenly;
 }
@@ -389,7 +437,12 @@ span:hover{
     overflow: hidden;
     isolation: isolate;
     transition: transform .35s ease;
+    animation: rise-in .65s ease-out both;
 }
+
+.work:nth-child(2){ animation-delay: .06s; }
+.work:nth-child(3){ animation-delay: .12s; }
+.work:nth-child(4){ animation-delay: .18s; }
 
 .work img{
     display: block;
@@ -471,40 +524,46 @@ span:hover{
 
 
 #services{
-    margin: 0 4vw;
-    padding: 10px 0;
+    width: min(90%, 1200px);
+    margin: 0 auto;
+    padding: 2rem 0;
 
 }
 
 .services-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+    gap: 16px;
     margin-top: 20px;
 }
 
-.services-list div{
+.services-list > div{
     background: #3a3a3a;
     color: #ffffff;
-    padding: 40px 40px;
+    padding: 32px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
+    animation: rise-in .65s ease-out both;
 }
 
-.services-list div i{
+.services-list > div:nth-child(2){ animation-delay: .06s; }
+.services-list > div:nth-child(3){ animation-delay: .12s; }
+.services-list > div:nth-child(4){ animation-delay: .18s; }
+
+.services-list > div i{
     font-size: 20px;
     margin-bottom: 30px;
 }
 
-.services-list div h2{
+.services-list > div h2{
    font-size: 30px; 
    font-weight: 500;
    margin-bottom: 15px;
 }
 
-.services-list div a{
+.services-list > div a{
     text-decoration: none;
     color: #fff;
     font-size: 12px;
@@ -513,7 +572,160 @@ span:hover{
 }
 
 
-.services-list div:hover{
+.services-list > div:hover{
     background: #3a0161;
     transform: translateY(-10px);
+}
+
+@keyframes rise-in{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 900px){
+    .mainsection,
+    .absub{
+        gap: 2rem;
+    }
+
+    .subsection .list{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .cerditsection{
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 680px){
+    .header{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header ul{
+        width: 100%;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .header a{
+        padding: .5rem .55rem;
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+
+    .main{
+        min-height: 42vh;
+    }
+
+    .main h1,
+    .ab_head h1{
+        font-size: 36px;
+    }
+
+    .mainsection,
+    .absub{
+        grid-template-columns: minmax(0, 1fr);
+        width: min(90%, 520px);
+        margin: 3rem auto;
+    }
+
+    .sub h1,
+    .absub h1{
+        font-size: 32px;
+    }
+
+    .subsection h1,
+    .sub-title{
+        font-size: 36px;
+    }
+
+    .cerditsection{
+        grid-template-columns: minmax(0, 1fr);
+        padding: 2rem 6vw 1rem;
+    }
+
+    .cerditleft{
+        padding: 1rem 0 0;
+    }
+
+    .cerditleft h1{
+        margin-bottom: 1rem;
+        font-size: 34px;
+    }
+
+    .ab_head{
+        min-height: 85vh;
+    }
+
+    .ab_head h1{
+        margin-top: auto;
+        padding-top: 2rem;
+    }
+
+    .ab_head p,
+    .absub p{
+        font-size: 17px;
+    }
+
+    .container{
+        width: 94%;
+        padding: .5rem;
+    }
+
+    .work-list{
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .work .layer{
+        padding: 18px;
+    }
+
+    #services{
+        width: 90%;
+    }
+
+    .services-list > div{
+        padding: 24px;
+    }
+}
+
+@media (max-width: 420px){
+    .header a{
+        padding: .45rem .4rem;
+        font-size: 14px;
+    }
+
+    .subsection .list{
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .subsection .list > div{
+        min-height: 160px;
+    }
+
+    .btn{
+        padding: 12px 28px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce){
+    *,
+    *::before,
+    *::after{
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
 }
