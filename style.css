@@ -476,7 +476,7 @@ span:hover{
     justify-content: flex-end;
     padding: 24px;
     color: #ffffff;
-    background: linear-gradient(0deg, rgba(34, 0, 48, .94), rgba(116, 0, 116, .58) 48%, rgba(0, 184, 196, .08));
+    background: linear-gradient(0deg, rgba(34, 0, 48, .94), rgba(155, 0, 155, 0.445) 48%, rgba(0, 183, 196, 0.048));
     opacity: 0;
     transform: translateY(12px);
     transition: opacity .35s ease, transform .35s ease;
