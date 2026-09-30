@@ -362,6 +362,12 @@ span:hover{
     align-items: center;
 }
 
+#portfolio .container{
+    margin: 10vh auto;
+    width: min(90vw, 1200px);
+    text-align: center;
+}
+
 .container{
     margin: 10vh 0vw;
     padding: 1vh 1vw;
@@ -446,6 +452,7 @@ span:hover{
 }
 
 .btn{
+    display: flex;
     margin: 50px auto;
     width: fit-content;
     padding: 14px 50px;
