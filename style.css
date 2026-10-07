@@ -101,23 +101,23 @@ a:hover{
 }
 
 .main-slide:nth-child(1){
-    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("/gm.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("gm.jpg");
 }
 
 .main-slide:nth-child(2){
-    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("/fb.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("fb.jpg");
 }
 
 .main-slide:nth-child(3){
-    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("/li.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.137), rgba(0, 0, 0, 0.164)), url("li.jpg");
 }
 
 .main-slide:nth-child(4){
-    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("/banner_default.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("banner_default.jpg");
 }
 
 .main-slide:nth-child(5){
-    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("/May\ 22\,\ 2025\,\ 01_19_17\ PM.png");
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("May\ 22\,\ 2025\,\ 01_19_17\ PM.png");
 }
 
 .main-slide.is-active{
