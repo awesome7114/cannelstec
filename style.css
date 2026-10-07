@@ -395,7 +395,7 @@ span:hover{
     max-width: 1000px;
     margin: auto auto 1rem;
     padding: 3rem 1.5rem 0;
-    -text-stroke: .1px #ffffff;
+    stroke: .1px #ffffff;
     font-size: 50px;
     color: #ffffff;
     animation: rise-in .8s ease-out both;
