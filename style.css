@@ -76,8 +76,9 @@ a:hover{
     right: 1.25rem;
     bottom: 1.25rem;
     z-index: 1001;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 48px;
     height: 48px;
     padding: 0;
@@ -86,6 +87,8 @@ a:hover{
     color: #ffffff;
     background: rgb(59, 0, 77);
     font-size: 26px;
+    letter-spacing: 0;
+    text-align: center;
     line-height: 1;
     box-shadow: 0 3px 12px rgba(0, 0, 0, .25);
 }
