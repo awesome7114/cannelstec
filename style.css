@@ -165,7 +165,7 @@ a:hover{
 }
 
 span{
-    -webkit-text-stroke: .9px #c1b5ca;
+    -webkit-text-stroke: .7px #c1b5ca;
     color: rgba(136, 0, 177, 0.445);
     transition: color .6s ease-in-out;
 }
@@ -190,7 +190,7 @@ span:hover{
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
-    border-radius: 96em;
+    border-radius: 100em;
 }
 
 .sub{
@@ -454,7 +454,7 @@ span:hover{
     max-height: 600px;
     aspect-ratio: 4 / 3;
     object-fit: cover;
-    border-radius: 96em;
+    border-radius: 100em;
 }
 
 .absub .right{
