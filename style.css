@@ -101,23 +101,23 @@ a:hover{
 }
 
 .main-slide:nth-child(1){
-    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("gm.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("/BingWallpaper.jpg");
 }
 
 .main-slide:nth-child(2){
-    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("fb.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("/BingWallpaper\ \(1\).jpg");
 }
 
 .main-slide:nth-child(3){
-    background-image: linear-gradient(rgba(0, 0, 0, 0.137), rgba(0, 0, 0, 0.164)), url("li.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.137), rgba(0, 0, 0, 0.164)), url("/BingWallpaper\ \(2\).jpg");
 }
 
 .main-slide:nth-child(4){
-    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("banner_default.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("/BingWallpaper\ \(3\).jpg");
 }
 
 .main-slide:nth-child(5){
-    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("May\ 22\,\ 2025\,\ 01_19_17\ PM.png");
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("/BingWallpaper\ \(4\).jpg");
 }
 
 .main-slide.is-active{
@@ -131,7 +131,7 @@ a:hover{
     margin: 0 auto;
     color: rgba(16, 16, 16, 0);
     -webkit-text-stroke: 1px #ffffff;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, .6);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.301);
     text-align: center;
     font-size: 44px;
     line-height: 1.2;
@@ -139,12 +139,12 @@ a:hover{
 }
 
 span{
-    color: rgb(135, 0, 177);
+    color: rgba(136, 0, 177, 0.267);
     transition: color .6s ease-in-out;
 }
 
 span:hover{
-    color: rgb(153, 29, 255);
+    color: rgba(153, 29, 255, 0.342);
 }
 
 /* -------------------------------------------sub--------------------------------------------------------------------- */
