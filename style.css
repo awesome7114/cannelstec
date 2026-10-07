@@ -140,7 +140,7 @@ a:hover{
 }
 
 span{
-    -webkit-text-stroke: .77px #c1b5caee;
+    -webkit-text-stroke: .9px #c1b5ca;
     color: rgba(136, 0, 177, 0.445);
     transition: color .6s ease-in-out;
 }
