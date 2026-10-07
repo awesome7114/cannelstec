@@ -101,23 +101,23 @@ a:hover{
 }
 
 .main-slide:nth-child(1){
-    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("/BingWallpaper.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("BingWallpaper.jpg");
 }
 
 .main-slide:nth-child(2){
-    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("/BingWallpaper\ \(1\).jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("BingWallpaper\ \(1\).jpg");
 }
 
 .main-slide:nth-child(3){
-    background-image: linear-gradient(rgba(0, 0, 0, 0.137), rgba(0, 0, 0, 0.164)), url("/BingWallpaper\ \(2\).jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.137), rgba(0, 0, 0, 0.164)), url("BingWallpaper\ \(2\).jpg");
 }
 
 .main-slide:nth-child(4){
-    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("/BingWallpaper\ \(3\).jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("BingWallpaper\ \(3\).jpg");
 }
 
 .main-slide:nth-child(5){
-    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("/BingWallpaper\ \(4\).jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("BingWallpaper\ \(4\).jpg");
 }
 
 .main-slide.is-active{
