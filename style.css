@@ -186,11 +186,15 @@ span:hover{
     gap: 3rem;
 }
 
-.sub_img img{
+.sub_img img,
+.absub .left img{
     width: 100%;
-    aspect-ratio: 4 / 3;
+    max-width: 460px;
+    aspect-ratio: 1;
     object-fit: cover;
-    border-radius: 100em;
+    border: 1px solid rgba(196, 139, 255, .65);
+    border-radius: 50%;
+    box-shadow: 0 0 14px rgba(173, 89, 255, .28);
 }
 
 .sub{
@@ -447,14 +451,6 @@ span:hover{
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     align-items: center;
     gap: 3rem;
-}
-
-.absub .left img{
-    width: 100%;
-    max-height: 600px;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    border-radius: 100em;
 }
 
 .absub .right{
@@ -726,6 +722,12 @@ span:hover{
         grid-template-columns: minmax(0, 1fr);
         width: min(90%, 520px);
         margin: 3rem auto;
+    }
+
+    .sub_img img,
+    .absub .left img{
+        width: min(82vw, 320px);
+        margin-inline: auto;
     }
 
     .sub h1,
