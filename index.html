@@ -27,13 +27,6 @@
             <div class="main-slide"></div>
         </div>
         <h1>Welcome to <span>Channelstec S&oslash;luti&oslash;ns +</span> Ventures</h1>
-        <div class="slideshow-dots" role="group" aria-label="Choose a background image">
-            <button type="button" aria-label="Show slide 1" aria-pressed="true"></button>
-            <button type="button" aria-label="Show slide 2" aria-pressed="false"></button>
-            <button type="button" aria-label="Show slide 3" aria-pressed="false"></button>
-            <button type="button" aria-label="Show slide 4" aria-pressed="false"></button>
-            <button type="button" aria-label="Show slide 5" aria-pressed="false"></button>
-        </div>
     </div>
 
     <div class="mainsection">
@@ -98,33 +91,17 @@
 
     <script>
         const slides = document.querySelectorAll(".main-slide");
-        const slideButtons = document.querySelectorAll(".slideshow-dots button");
         let activeSlide = 0;
-        let slideshowTimer;
 
         function showSlide(index) {
             slides[activeSlide].classList.remove("is-active");
-            slideButtons[activeSlide].setAttribute("aria-pressed", "false");
             activeSlide = index;
             slides[activeSlide].classList.add("is-active");
-            slideButtons[activeSlide].setAttribute("aria-pressed", "true");
         }
 
-        function startSlideshow() {
-            slideshowTimer = setInterval(() => {
-                showSlide((activeSlide + 1) % slides.length);
-            }, 6000);
-        }
-
-        slideButtons.forEach((button, index) => {
-            button.addEventListener("click", () => {
-                clearInterval(slideshowTimer);
-                showSlide(index);
-                startSlideshow();
-            });
-        });
-
-        startSlideshow();
+        setInterval(() => {
+            showSlide((activeSlide + 1) % slides.length);
+        }, 6000);
     </script>
 </body>
 </html>

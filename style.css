@@ -138,35 +138,6 @@ a:hover{
     animation: rise-in .8s ease-out both;
 }
 
-.slideshow-dots{
-    position: absolute;
-    z-index: 2;
-    bottom: 1.25rem;
-    left: 50%;
-    display: flex;
-    gap: .65rem;
-    transform: translateX(-50%);
-}
-
-.slideshow-dots button{
-    width: 14px;
-    height: 14px;
-    padding: 0;
-    border: 1px solid #ffffff;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, .4);
-    cursor: pointer;
-}
-
-.slideshow-dots button[aria-pressed="true"]{
-    background: #ffffff;
-}
-
-.slideshow-dots button:focus-visible{
-    outline: 2px solid #ffffff;
-    outline-offset: 3px;
-}
-
 span{
     color: rgb(135, 0, 177);
     transition: color .6s ease-in-out;
