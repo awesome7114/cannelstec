@@ -165,7 +165,7 @@ span:hover{
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
-    border-radius: 96%;
+    border-radius: 96em;
 }
 
 .sub{
@@ -429,7 +429,7 @@ span:hover{
     max-height: 600px;
     aspect-ratio: 4 / 3;
     object-fit: cover;
-    border-radius: 96%;
+    border-radius: 96em;
 }
 
 .absub .right{
