@@ -22,7 +22,7 @@ body{
     left: 0;
     z-index: 1000;
     width: 100%;
-    padding: .5rem clamp(.75rem, 3vw, 2rem);
+    padding: .7rem clamp(.78rem, 3.2vw, 2.1rem);
     background: linear-gradient(90deg, rgb(40, 0, 66), black);
     display: flex;
     flex-direction: row;
