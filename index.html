@@ -63,7 +63,7 @@
         <div class="cerditleft">
             <h1>Reach Us &oslash;n:</h1>
             <h2>Gmail: <br>Channelstec<span class="txt">@</span>gmail.c&oslash;m</h2>
-            <h2>WhatsApp: <br><span class="txt">+234</span>18903453678</h2>
+            <h2>WhatsApp: <br><span class="txt">+234</span>7089746501</h2>
 
   <div class="social-icons">
             <a href="#" title="Facebook"><img src="fb.jpg" alt="Facebook"></a>
@@ -76,7 +76,7 @@
         </div>
 
         <div class="cerditright">
-            <form>
+            <form id="contact-form">
                 <input type="text" name="Name" placeholder="Y&oslash;ur Name" required>
                 <input type="email" name="email" placeholder="Y&oslash;ur Email" required>
                 <textarea name="message" rows="6" placeholder="Write Y&oslash;ur c&oslash;mments &oslash;n this web site"></textarea>
@@ -89,10 +89,18 @@
     </div>
 
 
-    <a class="back-to-top" href="#top" aria-label="Back to top" title="Back to top">&uarr;</a>
+    <a class="back-to-top" href="#top" aria-label="Back to top" title="Back to top">&uArr;</a>
 
     <script src="back-to-top.js"></script>
     <script>
+        document.querySelector("#contact-form").addEventListener("submit", (event) => {
+            event.preventDefault();
+            const formData = new FormData(event.currentTarget);
+            const subject = `Website message from ${formData.get("Name")}`;
+            const body = `Name: ${formData.get("Name")}\nEmail: ${formData.get("email")}\n\n${formData.get("message")}`;
+            window.location.href = `mailto:kinaao7114@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        });
+
         const slides = document.querySelectorAll(".main-slide");
         let activeSlide = 0;
 
