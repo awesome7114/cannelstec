@@ -24,6 +24,7 @@ body{
     width: 100%;
     padding: .7rem clamp(.78rem, 3.2vw, 2.1rem);
     background: linear-gradient(90deg, rgb(40, 0, 66), black);
+    box-shadow: #d8b4fe 0 0 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
