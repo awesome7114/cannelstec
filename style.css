@@ -236,7 +236,7 @@ span:hover{
     padding: 0;
 }
 
-.subsection .list > div{
+.subsection .list > .a, .b, .c, .d{
     min-height: 200px;
     margin: 0;
     border-radius: 16px;
